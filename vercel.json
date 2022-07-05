@@ -1,0 +1,8 @@
+{
+    "builds": [
+      {"src": "/server/api.py", "use": "uvicorn app.main:app"}
+    ],
+    "routes": [
+      {"src": "/(.*)", "dest": "app/main.py"}
+    ]
+  }
